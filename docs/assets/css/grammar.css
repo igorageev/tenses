@@ -133,6 +133,20 @@
     content: "sometimes";
 }
 
+/* Description */
+
+.simple-present ~ .balloon .simple-present-info {
+    display: block;
+}
+
+.simple-future ~ .balloon .simple-future-info {
+    display: block;
+}
+
+.simple-past ~ .balloon .simple-past-info {
+    display: block;
+}
+
 /* Punctuation marks */
 
 .simple-present .addition::after,
