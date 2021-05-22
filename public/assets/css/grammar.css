@@ -1,0 +1,149 @@
+/* Pronouns */
+
+.I .subject::before {
+    content: "I";
+}
+
+.we .subject::before {
+    content: "We";
+}
+
+.they .subject::before {
+    content: "They";
+}
+
+.you .subject::before {
+    content: "You";
+}
+
+.he .subject::before {
+    content: "He";
+}
+
+.she .subject::before {
+    content: "She";
+}
+
+.it .subject::before {
+    content: "It";
+}
+
+.question:not(.I) .subject {
+    text-transform: lowercase; 
+}
+
+/* Verbs */
+
+.walk .verb::before {
+    content: "walk";
+}
+
+.eat .verb::before {
+    content: "eat";
+}
+.eat.simple-past.positive .verb::before {
+    content: "ate";
+}
+
+.simple-present.positive.he .verb::after,
+.simple-present.positive.she .verb::after,
+.simple-present.positive.it .verb::after {
+    content: "s";
+}
+
+.simple-past.walk.positive .verb::after {
+    content: "ed";
+}
+
+/* Auxiliarys */
+
+.simple-present.positive .auxiliary,
+.simple-past.positive .auxiliary {
+    display: none;
+}
+
+.simple-present.negative .auxiliary .auxillary-verb::before,
+.simple-present.question .auxiliary .auxillary-verb::before {
+    content: "do";
+}
+.simple-present.he.negative .auxiliary .sufix::before,
+.simple-present.she.negative .auxiliary .sufix::before,
+.simple-present.it.negative .auxiliary .sufix::before {
+    content: "es";
+}
+.negative .auxiliary::after {
+    content: " not";
+}
+
+.question .auxiliary {
+    order: -1;
+}
+.question .auxiliary .auxillary-verb::before {
+    text-transform: capitalize;
+}
+.simple-present.question.he .auxiliary .sufix::before,
+.simple-present.question.she .auxiliary .sufix::before,
+.simple-present.question.it .auxiliary .sufix::before {
+    content: "es";
+}
+
+
+.simple-future .auxiliary .auxillary-verb::before {
+    content: "will";
+}
+
+.simple-past.negative .auxiliary .auxillary-verb::before,
+.simple-past.question .auxiliary .auxillary-verb::before {
+    content: "did";
+}
+
+
+
+/* Other parts */
+
+.walk .addition::before {
+    content: "in the Losiny Ostrov Park";
+}
+.walk.simple-present .keyword::before {
+    content: "usually";
+}
+.simple-future .keyword,
+.simple-past .keyword{
+    order: 1;
+}
+
+.walk.simple-future .keyword::before {
+    content: "next weekend";
+}
+.eat.simple-future .keyword::before {
+    content: "tomorrow";
+}
+.walk.simple-past .keyword::before {
+    content: "last week";
+}
+.eat.simple-past .keyword::before {
+    content: "yesterday";
+}
+
+
+.eat .addition::before {
+    content: "porridge for breakfast";
+}
+.eat.simple-present .keyword::before {
+    content: "sometimes";
+}
+
+/* Punctuation marks */
+
+.simple-present .addition::after,
+.simple-future .keyword::after,
+.simple-past .keyword::after {
+    content: ".";
+}
+
+.simple-present.question .addition::after,
+.simple-future.question .keyword::after,
+.simple-past.question .keyword::after {
+    content: "?";
+}
+

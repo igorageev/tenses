@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verb Tenses</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grammar.css">
+</head>
+<body>
+
+    <h1>Verb Tenses</h1>
+
+    <div id="sentence" class="simple-present positive he walk">
+        <div class="subject" title="Subject"></div>
+        <div class="keyword" title="Keyword"></div>
+        <div class="auxiliary" title="Auxiliary"><span class="auxillary-verb"></span><span class="sufix"></span></div>
+        <div class="verb" title="Verb"></div>
+        <div class="addition"></div>
+    </div>
+
+    <div id="settings">
+        <li>
+            <span>Tense</span>
+            <select name="tense">
+                <option value="simple-present" selected>Simple Present</option>
+                <option value="simple-future">Simple Future</option>
+                <option value="simple-past">Simple Past</option>
+            </select>
+        </li>
+        <li>
+            <span>Statement</span>
+            <select name="statement">
+                <option value="positive" selected>Positive</option>
+                <option value="negative">Negative</option>
+                <option value="question">Question</option>
+            </select>
+        </li>
+        <li>
+            <span>Subject</span>
+            <select name="subject">
+                <option value="I">I</option>
+                <option value="we">We</option>
+                <option value="you">You</option>
+                <option value="they">They</option>
+                <option value="he" selected>He</option>
+                <option value="she">She</option>
+                <option value="it">It</option>
+            </select>
+        </li>
+        <li>
+            <span>Verb</span>
+            <select name="verb">
+                <option value="walk" selected>Walk</option>
+                <option value="eat">Eat</option>
+                <!-- eat ate eaten -->
+            </select>
+        </li>
+    </div>
+
+    <img src="assets/img/parrot.png" class="parrot">
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
