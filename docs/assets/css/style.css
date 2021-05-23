@@ -184,13 +184,13 @@ h1 {
 }
 .balloon div::before {
     content: "";
-    height: 28px;
-    width: 28px;
-    border: 14px solid transparent;
-    border-bottom: 14px solid white;
+    height: 32px;
+    width: 32px;
+    border: 16px solid transparent;
+    border-bottom: 16px solid white;
     transform: rotate(45deg);
     position: absolute;
-    right: -14px;
+    right: -16px;
     bottom: -14px;
     box-sizing: border-box;
 }
