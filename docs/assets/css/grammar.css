@@ -161,3 +161,99 @@
     content: "?";
 }
 
+/* Present Continuous */
+
+.present-continuous.I .auxiliary .auxillary-verb::before {
+    content: "am";
+}
+.present-continuous.he .auxiliary .auxillary-verb::before,
+.present-continuous.she .auxiliary .auxillary-verb::before,
+.present-continuous.it .auxiliary .auxillary-verb::before {
+    content: "is";
+}
+.present-continuous.we .auxiliary .auxillary-verb::before,
+.present-continuous.you .auxiliary .auxillary-verb::before,
+.present-continuous.they .auxiliary .auxillary-verb::before {
+    content: "are";
+}
+
+.present-continuous .verb::after {
+    content: "ing";
+}
+
+.present-continuous.eat .addition::before {
+    content: "porridge";
+}
+
+.present-continuous .keyword{
+    order: 1;
+}
+.walk.present-continuous .keyword::before {
+    content: "now";
+}
+.eat.present-continuous .keyword::before {
+    content: "at the moment";
+}
+
+.present-continuous .keyword::after {
+    content: ".";
+}
+
+.present-continuous ~ .balloon .present-continuous-info {
+    display: block;
+}
+
+
+/* Present Perfect */
+
+.present-perfect.I .auxiliary .auxillary-verb::before,
+.present-perfect.we .auxiliary .auxillary-verb::before,
+.present-perfect.you .auxiliary .auxillary-verb::before,
+.present-perfect.they .auxiliary .auxillary-verb::before {
+    content: "have";
+}
+.present-perfect.he .auxiliary .auxillary-verb::before,
+.present-perfect.she .auxiliary .auxillary-verb::before,
+.present-perfect.it .auxiliary .auxillary-verb::before {
+    content: "has";
+}
+
+.present-perfect.walk .verb::after {
+    content: "ed";
+}
+.present-perfect.eat .verb::before {
+    content: "eaten";
+}
+
+.present-perfect.eat .addition::before {
+    content: "porridge";
+}
+
+.present-perfect.walk .keyword::before {
+    content: "already";
+}
+.present-perfect.eat .keyword::before {
+    content: "yet";
+}
+
+.present-perfect.positive .auxiliary,
+.present-perfect.negative .auxiliary {
+    order: -1;
+}
+.present-perfect .subject {
+    order: -2;
+}
+.present-perfect.question .auxiliary {
+    order: -3;
+}
+
+.present-perfect .addition::after {
+    content: ".";
+}
+.present-perfect.question .addition::after {
+    content: "?";
+}
+
+.present-perfect ~ .balloon .present-perfect-info {
+    display: block;
+}
