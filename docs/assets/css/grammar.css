@@ -229,11 +229,16 @@
     content: "porridge";
 }
 
-.present-perfect.walk .keyword::before {
+.present-perfect.positive .keyword::before {
     content: "already";
 }
-.present-perfect.eat .keyword::before {
+.present-perfect.question .keyword::before,
+.present-perfect.negative .keyword::before {
     content: "yet";
+}
+.present-perfect.question .keyword,
+.present-perfect.negative .keyword {
+    order: 1;
 }
 
 .present-perfect.positive .auxiliary,
@@ -247,10 +252,13 @@
     order: -3;
 }
 
-.present-perfect .addition::after {
+.present-perfect.positive .addition::after {
     content: ".";
 }
-.present-perfect.question .addition::after {
+.present-perfect.negative .keyword::after {
+    content: ".";
+}
+.present-perfect.question .keyword::after {
     content: "?";
 }
 
