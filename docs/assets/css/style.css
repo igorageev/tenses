@@ -175,6 +175,7 @@ h1 {
 .balloon div {
     width: 320px;
     padding: 24px;
+    position: relative;
     border-radius: 16px 16px 0px 16px;
     background-color: white;
     filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.16));
